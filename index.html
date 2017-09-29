@@ -36,7 +36,7 @@
         </ul>
       </nav>
 
-      <b class="page-header__slogan">Милые штуки ручной работы для дома</b>
+      <h2 class="page-header__slogan">Милые штуки ручной работы для дома</h2>
 
       <ul class="offers-list">
         <li class="offers-list__item">
@@ -60,15 +60,15 @@
         </p>
         <table class="promo__specification">
           <tr>
-            <td class="promo__field">Цвет:</td>
+            <th class="promo__field">Цвет:</th>
             <td class="promo__value">«Тиффани»/серый</td>
           </tr>
           <tr>
-            <td class="promo__field">Диаметр:</td>
+            <th class="promo__field">Диаметр:</th>
             <td class="promo__value">25 см</td>
           </tr>
           <tr>
-            <td class="promo__field">Высота:</td>
+            <th class="promo__field">Высота:</th>
             <td class="promo__value">15 см</td>
           </tr>
         </table>
@@ -84,36 +84,36 @@
         <h2 class="about__heading">Коротко о нас:</h2>
         <ul class="about__list">
           <li class="about__item  about__item--ecology">
-            <p class="about__text">Экологически чистые материалы</p>
+            Экологически чистые материалы
           </li>
           <li class="about__item  about__item--price">
-            <p class="about__text">Скандинавский стиль по российской цене</p>
+            Скандинавский стиль по российской цене
           </li>
           <li class="about__item  about__item--like">
-            <p class="about__text">Увеличивает лайки на фотографиях</p>
+            Увеличивает лайки на фотографиях
           </li>
           <li class="about__item  about__item--handmade">
-            <p class="about__text">Связано вручную с любовью и умилением</p>
+            Связано вручную с любовью и умилением
           </li>
           <li class="about__item  about__item--patriot">
-            <p class="about__text">Поддержка отечественного производителя</p>
+            Поддержка отечественного производителя
           </li>
           <li class="about__item  about__item--gift">
-            <p class="about__text">Поставляется в подарочной упаковке</p>
+            Поставляется в подарочной упаковке
           </li>
         </ul>
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <div class="reviews__list  slider__list">
+        <div class="reviews__wrapper">
+          <div class="reviews__list">
             <h2 class="reviews__title">Отзывы</h2>
-            <blockquote class="reviews__item  slider__item">
+            <blockquote class="reviews__item">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
               <cite class="reviews__author"><b>Анастасия Красильникова</b> @misssssiskras</cite>
             </blockquote>
-            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-            <button class="reviews__next" type="button">Следующий отзыв</button>
+            <button class="reviews__arrow  reviews__arrow--prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__arrow  reviews__arrow--next" type="button">Следующий отзыв</button>
           </div>
           <a class="reviews__write  btn" href="reviews.html">Написать</a>
         </div>
@@ -121,11 +121,16 @@
 
       <section class="contacts">
         <h3 class="contacts__title">Контакты</h3>
-        <p class="contacts__text"><span>e-mail:</span>
-          <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </p>
-        <p class="contacts__text"><span>адрес:</span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-        </p>
+        <dl  class="contacts__list">
+          <dt class="contacts__item">e-mail:</dt>
+          <dd class="contacts__definition">
+            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </dd>
+          <dt class="contacts__item">адрес:</dt>
+          <dd class="contacts__definition">
+            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
+          </dd>
+        </dl>
 
         <div class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651625!2d30.32089461608198!3d59.93879418187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1506151121900" width="320" height="458" allowfullscreen></iframe>
@@ -150,11 +155,34 @@
           </li>
         </ul>
 
-        <div class="page-footer__copyright copyright">
+        <div class="copyright">
           <b class="copyright__text">Разработано</b>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
       </div>
     </footer>
+
+    <section class="modal  modal--to-cart">
+      <h2 class="modal__title">Добавить  в корзину</h2>
+      <p class="modal__tip">Выберите размер:</p>
+      <form class="modal__form  size-filter" action="https://echo.htmlacademy.ru" method="post">
+        <ul>
+          <li class="size-filter__option">
+            <input class="visually-hidden  size-filter__input" type="radio" id="filter-s" name="small" value="s" checked>
+            <label for="filter-s">S</label>
+          </li>
+          <li class="size-filter__option">
+            <input class="visually-hidden  size-filter__input" type="radio" id="filter-m" name="medium" value="m" checked>
+            <label for="filter-m">M</label>
+          </li>
+          <li class="size-filter__option">
+            <input class="visually-hidden  size-filter__input" type="radio" id="filter-l" name="large" value="l" checked>
+            <label for="filter-l">L</label>
+          </li>
+        </ul>
+
+        <button class="modal__btn  btn" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
