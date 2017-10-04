@@ -36,6 +36,15 @@
   font-weight: 700;
   color: @text-color--black;
   text-decoration: none;
+
+  &:hover,
+  &:focus  {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .product__descr {
@@ -61,6 +70,14 @@
 
     background-color: @border-color;
   }
+}
+
+.product__inner-price {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  min-height: 72px;
 }
 
 .product__price {
