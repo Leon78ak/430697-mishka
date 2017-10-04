@@ -1,10 +1,17 @@
 .page-heading {
   .container();
 
+  background-color: @bg-grey--light;
 
-  background-image: url("../img/hero-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center -18px;
+  &--index {
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -18px;
+  }
+
+  &--inner {
+    background-color: @bg-grey--light;
+  }
 }
 
 .page-heading__slogan {
@@ -19,4 +26,11 @@
   line-height: 30px;
   text-align: center;
   color: @text-color--black;
+
+  &--inner {
+    margin-bottom: 30px;
+    padding-bottom: 71px;
+  }
 }
+
+
