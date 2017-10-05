@@ -1,0 +1,23 @@
+.form-order__group {
+  .fieldset-unstyled();
+}
+
+.form-order__group-name {
+  position: relative;
+
+  width: 100%;
+  padding: 0;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 1px;
+
+    background-color: red;
+  }
+}
