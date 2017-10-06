@@ -18,7 +18,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог товаров</a>
+            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Вязание на заказ</a>
@@ -65,12 +65,12 @@
             <ul class="form-order__list">
               <li class="form-order__field">
                 <input class="form-order__radio  visually-hidden" type="radio" id="order-interior" name="type" value="interior" checked>
-                <label class="form-order__radio-label" for="order-interior">Аксессуар для интерьера</label>
+                <label class="form-order__label  form-order__label--radio" for="order-interior">Аксессуар для интерьера</label>
               </li>
               <li class="form-order__field">
                 <input class="form-order__radio  visually-hidden" type="radio" id="order-toy" name="type" value="toy
                 ">
-                <label class="form-order__radio-label" for="order-toy">Детская игрушка</label>
+                <label class="form-order__label  form-order__label--radio" for="order-toy">Детская игрушка</label>
               </li>
             </ul>
           </fieldset>
@@ -78,73 +78,73 @@
           <fieldset class="form-order__group">
             <legend class="form-order__group-name">цвет</legend>
             <ul class="form-order__list">
-              <li class="form-order-order__field">
+              <li class="form-order__field">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-white" name="white" checked>
-                <label class="form-order__checkbox-label" for="order-white">Белый</label>
+                <label class="form-order__label  form-order__label--checkbox" for="order-white">Белый</label>
               </li>
               <li class="form-order__field">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-grey" name="grey" checked>
-                <label class="form-order__checkbox-label" for="order-grey">Серый</label>
+                <label class="form-order__label  form-order__label--checkbox" for="order-grey">Серый</label>
               </li>
               <li class="form-order__field">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-tiffany" name="tiffany">
-                <label class="form-order__checkbox-label" for="order-tiffany">&laquo;Тиффани&raquo;</label>
+                <label class="form-order__label  form-order__label--checkbox" for="order-tiffany">&laquo;Тиффани&raquo;</label>
               </li>
               <li class="form-order__field">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-black" name="black">
-                <label class="form-order__checkbox-label" for="order-black">Черный</label>
+                <label class="form-order__label  form-order__label--checkbox" for="order-black">Черный</label>
               </li>
               <li class="form-order__field">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-rose" name="rose">
-                <label class="form-order__checkbox-label" for="order-rose">Розовый</label>
+                <label class="form-order__label  form-order__label--checkbox" for="order-rose">Розовый</label>
               </li>
               <li class="form-order__field">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-orange" name="orange">
-                <label class="form-order__checkbox-label" for="order-orange">Оранжевый</label>
+                <label class="form-order__label  form-order__label--checkbox" for="order-orange">Оранжевый</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-order__group">
-            <legend class="form-order__group-name">фио</legend>
+            <legend class="form-order__group-name  form-order__group-name--text">фио</legend>
             <ul class="form-order__list">
               <li class="form-order__field">
-                <label for="firstname">Имя:</label>
+                <label class="form-order__label" for="firstname">Имя:</label>
                 <input class="form-order__input  form-order__input--text" type="text" id="firstname" name="firstname" placeholder="Введите ваше имя*" required>
               </li>
-              <li class="form__field">
-                <label for="lastname">Фамилия:</label>
+              <li class="form-order__field">
+                <label class="form-order__label" for="lastname">Фамилия:</label>
                 <input class="form-order__input  form-order__input--text" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию*" required>
               </li>
-              <li class="form__field">
-                <label for="surname">Отчество:</label>
+              <li class="form-order__field">
+                <label class="form-order__label" for="surname">Отчество:</label>
                 <input class="form-order__input  form-order__input--text" type="text" id="surname" name="surname" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-order__group">
-            <legend class="form-order__group-name">
-              <label for="tel">тел</label>
-              <input class="form-order__input  form-order__input--tel" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
+            <legend class="form-order__group-name  form-order__group-name--tel">
+              <label class="form-order__label" for="tel">тел</label>
             </legend>
+            <input class="form-order__input  form-order__input--tel" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
           </fieldset>
           <fieldset class="form-order__group">
-            <legend class="form-order__group-name">
-              <label for="email">e-mail</label>
-              <input class="form-order__input  form-order__input--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+            <legend class="form-order__group-name  form-order__group-name--email">
+              <label class="form-order__label" for="email">e-mail</label>
             </legend>
+            <input class="form-order__input  form-order__input--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
           </fieldset>
-          <fieldset class="form-order__group">
-            <legend class="form-order__group-name">
-              <label for="letter">доп</label>
-              <textarea class="form-order__input  form-order__input--area" id="letter" name="letter" cols="4" rows="10">Опишите все ваши пожелания к заказу</textarea>
+          <fieldset class="form-order__group  form-order__group--area">
+            <legend class="form-order__group-name  form-order__group-name--area">
+              <label class="form-order__label" for="letter">доп</label>
             </legend>
+            <textarea class="form-order__input  form-order__input--area" id="letter" name="letter" cols="4" rows="10">Опишите все ваши пожелания&nbsp;к заказу</textarea>
           </fieldset>
 
-          <small class="form-order__legend">
+          <small class="form-order__tip">
             <sup>*</sup>Поля обязательны для заполнения
           </small>
 
-          <button class="form-order__btn  btn">Заказать</button>
+          <button class="form-order__btn  btn">Отправить заказ</button>
         </form>
       </section>
     </main>
@@ -195,7 +195,7 @@
         <div class="page-footer__copyright  copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#63d1bb" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            <svg class="copyright__link-icon" width="40" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#63d1bb" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
             </svg>
             <span class="visually-hidden">htmlacademy</span>
           </a>
