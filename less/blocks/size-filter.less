@@ -1,0 +1,36 @@
+.size-filter {
+  display: flex;
+}
+
+.size-filter__select {
+  display: flex;
+  align-items: center;
+}
+// доделать чек
+.size-filter__input:checked .size-filter__indicator {
+    border: 2px solid #62d1ba;
+}
+
+.size-filter__indicator {
+  display: block;
+  width: 80px;
+  padding: 16px 0;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #444444;
+  text-align: center;
+  border: 2px solid @border-color;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus  {
+    border: 2px solid #c7c7c7;
+  }
+
+  &:active {
+    border: 2px solid #62d1ba;
+  }
+}
