@@ -1,26 +1,22 @@
 .search {
   display: flex;
+  align-items: center;
+
+  border-top: 1px solid @border-color;
+  border-bottom: 1px solid @border-color;
 }
 
 .search__submit {
-  position: absolute;
-  top: 50%;
-  left: 30px;
-
-  width: 20px;
-  height: 20px;
+  width: 76px;
+  height: 78px;
   padding: 0;
 
   background-color: transparent;
   border: none;
+
   border-radius: 0;
   outline: 0;
   cursor: pointer;
-  transform: translateY(-50%);
-}
-
-.search__fill {
-  opacity: 0.2;
 }
 
 .search__submit:hover .search__fill,
@@ -35,6 +31,8 @@
 .search__input {
   .container();
 
+  box-sizing: border-box;
+
   margin-bottom: -1px;
   padding-top: 26px;
   padding-right: 30px;
@@ -48,23 +46,31 @@
 
   border: none;
   border-radius: 0;
-  border-top: 1px solid @border-color;
-  border-bottom: 1px solid @border-color;
   outline: 0;
   cursor: pointer;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 1);
+  }
 }
 
-.search__input::-webkit-input-placeholder        { color: rgba(0, 0, 0, 1); }
-.search__input::-moz-placeholder                 { color: rgba(0, 0, 0, 1); }
-.search__input:-moz-placeholder                  { color: rgba(0, 0, 0, 1); }
-.search__input:-ms-input-placeholder             { color: rgba(0, 0, 0, 1); }
+.search__input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
 
-.search__input:hover::-webkit-input-placeholder  { color: rgba(0, 0, 0, 0.6); }
-.search__input:hover::-moz-placeholder           { color: rgba(0, 0, 0, 0.6); }
-.search__input:hover:-moz-placeholder            { color: rgba(0, 0, 0, 0.6); }
-.search__input:hover:-ms-input-placeholder       { color: rgba(0, 0, 0, 0.6); }
+.search__input:focus::placeholder {
+  color: transparent;
+}
 
-.search__input:focus::-webkit-input-placeholder  { color: transparent; }
-.search__input:focus::-moz-placeholder           { color: transparent; }
-.search__input:focus:-moz-placeholder            { color: transparent; }
-.search__input:focus:-ms-input-placeholder       { color: transparent; }
+@media (min-width: @tablet-width) {
+
+  .search {
+    width: auto;
+    border: 1px solid;
+  }
+
+  .search__input {
+    width: 0;
+    padding: 0;
+  }
+}
