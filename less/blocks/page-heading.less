@@ -1,8 +1,6 @@
 .page-heading {
   .container();
 
-  margin-top: -64px;
-
   color: @text-color--black;
   background-color: #f9f9f9;
 
@@ -31,5 +29,13 @@
 
   &--inner {
     padding-bottom: 71px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-heading {
+    margin-top: -88px;
+
+    border-top: 1px solid @border-color;
   }
 }
