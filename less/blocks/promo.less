@@ -1,15 +1,14 @@
 .promo {
-  .main-inner();
-
-  margin-bottom: 35px;
-  padding-top: 30px;
-
   color: @text-color;
   background-color: @bg-white;
 }
 
 .promo__title {
   .section-title();
+}
+
+br {
+  display: none;
 }
 
 .promo__flag {
@@ -34,6 +33,8 @@
 .promo__specification {
   width: 100%;
   margin-bottom: 28px;
+
+  line-height: 20px;
 
   border-collapse: collapse;
 }
@@ -76,4 +77,81 @@
   line-height: @line-height;
   font-weight: 700;
   text-align: center;
+}
+
+@media (max-width: @mobile-width-only) {
+  .promo {
+    width: 260px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    padding: 0 30px;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .promo {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    padding: 0 50px;
+    padding-top: 50px;
+  }
+
+  .promo__heading {
+    display: flex;
+
+    width: 100%;
+    align-items: center;
+  }
+
+  .promo__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__flag {
+    width: 126px;
+    margin-left: auto;
+
+    text-align: center;
+  }
+
+  .promo__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 43%;
+    padding-right: 7%;
+  }
+
+  .promo__descr {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  br {
+  display: block;
+}
+
+  .promo__image {
+    width: 334px;
+    height: 405px;
+  }
+
+  .promo__specification {
+    width: 100%;
+  }
+
+  .promo__price {
+    width: 100%;
+  }
+
+  .promo__to-order {
+    width: 100%;
+  }
 }
