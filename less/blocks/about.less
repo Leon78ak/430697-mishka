@@ -21,7 +21,7 @@
 }
 
 .about__heading {
-  .section-title();
+  .section-title--mobile ();
 
   margin-bottom: 2px;
 }
@@ -81,4 +81,39 @@
     background-position: 4px 33px;
     background-image: url("../img/icon-feature-gift.svg");
   }
+}
+
+@media (min-width: @tablet-width) {
+
+  .about {
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 52px;
+  }
+
+  .about__heading {
+    .section-title--tablet ();
+
+    margin-bottom: 17px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .about__item {
+    width: 50%;
+    margin-bottom: 28px;
+
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }
