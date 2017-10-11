@@ -11,41 +11,54 @@
 
       <nav class="main-nav  main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item  main-nav__item--active">
-            <a class="page-logo  main-nav__link  main-nav__link--logo" href="index.html">
-              <img src="img/logo-mobile.svg" width="85" height="35" alt="логотип интернет-магазина &laquo;Мишка&raquo;">
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Вязание на заказ</a>
-          </li>
-          <li class="main-nav__item  main-nav__item--search">
-            <form class="search" action="https://echo.htmlacademy.ru" method="post">
-              <button class="search__submit" type="submit">
-                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
-                  <path class="search__fill" fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list  main-nav__list--site-menu">
+            <li class="main-nav__item  main-nav__item--logo  main-nav__item--active">
+              <a class="main-nav__link  main-nav__link--logo" href="index.html">
+                <img src="img/logo-mobile.svg" width="85" height="35" alt="логотип интернет-магазина &laquo;Мишка&raquo;">
+              </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--catalog">
+              <a class="main-nav__link  main-nav__link--catalog" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--order">
+              <a class="main-nav__link  main-nav__link--order">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--new">
+              <a class="main-nav__link  main-nav__link--new" href="#">Новые поступления</a>
+            </li>
+            <li class="main-nav__item  main-nav__item--sale">
+              <a class="main-nav__link  main-nav__link--sale" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list  main-nav__list--user-menu">
+            <li class="main-nav__item  main-nav__item--search">
+              <form class="search" action="https://echo.htmlacademy.ru" method="post">
+                <button class="search__submit" type="submit">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                    <path class="search__fill" fill="#d3d2d2" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+                  </svg>
+                  <span class="visually-hidden">Найти</span>
+                </button>
+                <label class="visually-hidden" for="search">
+                  поле поиска по сайту
+                </label>
+                <input class="search__input" type="search" id="search" name="search" placeholder="Поиск по сайту">
+              </form>
+            </li>
+            <li class="main-nav__item  main-nav__item--to-cart">
+              <a class="main-nav__link  to-cart  to-cart--nav" href="#">
+                <svg class="to-cart__icon  to-cart__icon--nav" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21" height="18" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 21 18" xml:space="preserve">
+                  <path class="to-cart__fill" fill="#d3d2d2" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
                 </svg>
-                <span class="visually-hidden">Найти</span>
-              </button>
-              <label class="visually-hidden" for="search">
-                поле поиска по сайту
-              </label>
-              <input class="search__input" type="search" id="search" name="search" placeholder="Поиск по сайту">
-            </form>
-          </li>
-          <li class="main-nav__item  main-nav__item--to-cart">
-            <a class="main-nav__link  to-cart" href="#">
-              <svg class="to-cart__icon  to-cart__icon--nav" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21" height="18" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 21 18" xml:space="preserve">
-                <path class="to-cart__fill" fill="#d3d2d2" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
-              </svg>
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
+                Корзина: пока пуста
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link  main-nav__link--delivery">Бесплатная доставка по России</a>
+            </li>
+          </ul>
+        </div>
       </nav>
 
     </header>
@@ -57,11 +70,11 @@
 
       <section class="order">
         <h2 class="visually-hidden">форма заказа</h2>
-        <p class="order__tip">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="order__tip">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую<br/>форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
         <form class="form-order" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form-order__group">
-            <legend class="form-order__group-name">тип</legend>
+          <div class="form-order__group">
+            <p class="form-order__group-name">тип</p>
             <ul class="form-order__list">
               <li class="form-order__field">
                 <input class="form-order__radio  visually-hidden" type="radio" id="order-interior" name="type" value="interior" checked>
@@ -73,10 +86,10 @@
                 <label class="form-order__label  form-order__label--radio" for="order-toy">Детская игрушка</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
 
-          <fieldset class="form-order__group">
-            <legend class="form-order__group-name">цвет</legend>
+          <div class="form-order__group">
+            <p class="form-order__group-name">цвет</p>
             <ul class="form-order__list">
               <li class="form-order__field">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-white" name="white" checked>
@@ -103,9 +116,9 @@
                 <label class="form-order__label  form-order__label--checkbox" for="order-orange">Оранжевый</label>
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form-order__group">
-            <legend class="form-order__group-name  form-order__group-name--text">фио</legend>
+          </div>
+          <div class="form-order__group">
+            <p class="form-order__group-name  form-order__group-name--text">фио</p>
             <ul class="form-order__list">
               <li class="form-order__field">
                 <label class="form-order__label" for="firstname">Имя:</label>
@@ -120,25 +133,25 @@
                 <input class="form-order__input  form-order__input--text" type="text" id="surname" name="surname" placeholder="Отчество, если желаете">
               </li>
             </ul>
-          </fieldset>
-          <fieldset class="form-order__group">
-            <legend class="form-order__group-name  form-order__group-name--tel">
+          </div>
+          <div class="form-order__group">
+            <p class="form-order__group-name  form-order__group-name--tel">
               <label class="form-order__label" for="tel">тел</label>
-            </legend>
+            </p>
             <input class="form-order__input  form-order__input--tel" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
-          </fieldset>
-          <fieldset class="form-order__group">
-            <legend class="form-order__group-name  form-order__group-name--email">
+          </div>
+          <div class="form-order__group">
+            <p class="form-order__group-name  form-order__group-name--email">
               <label class="form-order__label" for="email">e-mail</label>
-            </legend>
+            </p>
             <input class="form-order__input  form-order__input--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
-          </fieldset>
-          <fieldset class="form-order__group  form-order__group--area">
-            <legend class="form-order__group-name  form-order__group-name--area">
+          </div>
+          <div class="form-order__group  form-order__group--area">
+            <p class="form-order__group-name  form-order__group-name--area">
               <label class="form-order__label" for="letter">доп</label>
-            </legend>
-            <textarea class="form-order__input  form-order__input--area" id="letter" name="letter" cols="4" rows="10">Опишите все ваши пожелания&nbsp;к заказу</textarea>
-          </fieldset>
+            </p>
+            <textarea class="form-order__input  form-order__input--area" id="letter" name="letter" cols="4" rows="10" placeholder="Опишите все ваши пожелания&nbsp;к заказу"></textarea>
+          </div>
 
           <small class="form-order__tip">
             <sup>*</sup>Поля обязательны для заполнения

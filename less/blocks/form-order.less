@@ -3,8 +3,6 @@
 }
 
 .form-order__group {
-  .fieldset-unstyled();
-
   margin-bottom: 30px;
 
   border-top: 1px solid @green--light;
@@ -166,4 +164,14 @@
 
 .form-order__btn {
   width: 260px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-order__group {
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }
