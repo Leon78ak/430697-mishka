@@ -73,8 +73,8 @@
         <p class="order__tip">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую<br/>форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
 
         <form class="form-order" action="https://echo.htmlacademy.ru" method="post">
-          <div class="form-order__group">
-            <p class="form-order__group-name">тип</p>
+          <div class="form-order__group  form-order__group--radio">
+            <p class="form-order__group-name  form-order__group-name--radio">тип</p>
             <ul class="form-order__list">
               <li class="form-order__field">
                 <input class="form-order__radio  visually-hidden" type="radio" id="order-interior" name="type" value="interior" checked>
@@ -88,82 +88,90 @@
             </ul>
           </div>
 
-          <div class="form-order__group">
+          <div class="form-order__group  form-order__group--checkbox">
             <p class="form-order__group-name">цвет</p>
             <ul class="form-order__list">
-              <li class="form-order__field">
+              <li class="form-order__field  form-order__field--checkbox">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-white" name="white" checked>
                 <label class="form-order__label  form-order__label--checkbox" for="order-white">Белый</label>
               </li>
-              <li class="form-order__field">
+              <li class="form-order__field  form-order__field--checkbox">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-grey" name="grey" checked>
                 <label class="form-order__label  form-order__label--checkbox" for="order-grey">Серый</label>
               </li>
-              <li class="form-order__field">
+              <li class="form-order__field  form-order__field--checkbox">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-tiffany" name="tiffany">
                 <label class="form-order__label  form-order__label--checkbox" for="order-tiffany">&laquo;Тиффани&raquo;</label>
               </li>
-              <li class="form-order__field">
+              <li class="form-order__field  form-order__field--checkbox">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-black" name="black">
                 <label class="form-order__label  form-order__label--checkbox" for="order-black">Черный</label>
               </li>
-              <li class="form-order__field">
+              <li class="form-order__field  form-order__field--checkbox">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-rose" name="rose">
                 <label class="form-order__label  form-order__label--checkbox" for="order-rose">Розовый</label>
               </li>
-              <li class="form-order__field">
+              <li class="form-order__field  form-order__field--checkbox">
                 <input class="form-order__checkbox  visually-hidden" type="checkbox" id="order-orange" name="orange">
                 <label class="form-order__label  form-order__label--checkbox" for="order-orange">Оранжевый</label>
               </li>
             </ul>
           </div>
-          <div class="form-order__group">
+
+          <div class="form-order__group  form-order__group--text">
             <p class="form-order__group-name  form-order__group-name--text">фио</p>
             <ul class="form-order__list">
               <li class="form-order__field">
-                <label class="form-order__label" for="firstname">Имя:</label>
+                <label class="form-order__label  form-order__label--text" for="firstname">Имя:</label>
                 <input class="form-order__input  form-order__input--text" type="text" id="firstname" name="firstname" placeholder="Введите ваше имя*" required>
               </li>
               <li class="form-order__field">
-                <label class="form-order__label" for="lastname">Фамилия:</label>
+                <label class="form-order__label  form-order__label--text" for="lastname">Фамилия:</label>
                 <input class="form-order__input  form-order__input--text" type="text" id="lastname" name="lastname" placeholder="Укажите фамилию*" required>
               </li>
               <li class="form-order__field">
-                <label class="form-order__label" for="surname">Отчество:</label>
+                <label class="form-order__label  form-order__label--text" for="surname">Отчество:</label>
                 <input class="form-order__input  form-order__input--text" type="text" id="surname" name="surname" placeholder="Отчество, если желаете">
               </li>
             </ul>
           </div>
-          <div class="form-order__group">
+
+          <div class="form-order__group  form-order__group--tel">
             <p class="form-order__group-name  form-order__group-name--tel">
-              <label class="form-order__label" for="tel">тел</label>
+              <label class="form-order__label  form-order__label--tel" for="tel">тел</label>
             </p>
             <input class="form-order__input  form-order__input--tel" type="tel" id="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
-          </div>
-          <div class="form-order__group">
             <p class="form-order__group-name  form-order__group-name--email">
-              <label class="form-order__label" for="email">e-mail</label>
+              <label class="form-order__label  form-order__label--email" for="email">e-mail</label>
             </p>
             <input class="form-order__input  form-order__input--email" type="email" id="email" name="email" placeholder="Ваш Email*" required>
           </div>
+
           <div class="form-order__group  form-order__group--area">
             <p class="form-order__group-name  form-order__group-name--area">
-              <label class="form-order__label" for="letter">доп</label>
+              <label class="form-order__label  form-order__label--area" for="letter">доп</label>
             </p>
             <textarea class="form-order__input  form-order__input--area" id="letter" name="letter" cols="4" rows="10" placeholder="Опишите все ваши пожелания&nbsp;к заказу"></textarea>
           </div>
 
-          <small class="form-order__tip">
-            <sup>*</sup>Поля обязательны для заполнения
-          </small>
+          <div class="form-order__group  form-order__group--btn">
+            <small class="form-order__tip">
+              <sup>*</sup>Поля обязательны для заполнения
+            </small>
+            <button class="form-order__btn  btn">Отправить заказ</button>
+          </div>
 
-          <button class="form-order__btn  btn">Отправить заказ</button>
         </form>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
+
+        <a class="page-footer__logo">
+          <img src="img/logo-mobile.svg" width="85" height="35" alt="логотип интернет-магазина &laquo;Мишка&raquo;">
+        </a>
+
         <div class="page-footer__social  social">
           <ul class="social__list">
             <li class="social__item">
