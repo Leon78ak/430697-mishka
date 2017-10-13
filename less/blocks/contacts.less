@@ -36,6 +36,40 @@
   }
 }
 
+.contacts__email {
+  font: inherit;
+  color: @text-color;
+}
+
 .contacts__btn {
   margin: 39px 0;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__title {
+    .section-title--tablet ();
+  }
+
+  .contacts__list {
+    flex-wrap: nowrap;
+
+    font-size: 17px;
+  }
+
+  .contacts__item {
+    margin-right: 0;
+  }
+
+  .contacts__email {
+    font-size: 17px;
+  }
+
+  .contacts__btn {
+    width: 43%;
+    margin: 39px auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

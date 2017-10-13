@@ -32,7 +32,7 @@ body {
 
 img {
   max-width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -53,35 +53,13 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.container {
-  margin: 0 auto;
-
-  width: 320px;
-}
-
-.main-inner {
-  padding: 0 30px;
-}
-
-.section-title {
-  margin: 0;
-
-  font-size: 25px;
+@media (min-width: @tablet-width) {
+  body {
+  font-size: 17px;
   line-height: 30px;
-  font-weight: 700;
-  color: @text-color--black;
+  }
 }
 
-.ul-unstyled {
-  margin: 0;
-  padding: 0;
+@media (min-width: @desktop-width) {
 
-  list-style: none;
-}
-
-.fieldset-unstyled {
-  margin: 0;
-  padding: 0;
-
-  border: 0;
 }

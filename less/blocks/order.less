@@ -5,10 +5,31 @@
 }
 
 .order__tip {
+  width: 260px;
   margin: 0;
   margin-bottom: 20px;
 
   font-size: 13px;
   line-height: 24px;
   color: @text-color;
+}
+
+@media (min-width: @tablet-width) {
+
+  .order {
+    padding: 0;
+    padding-top: 117px;
+  }
+
+  .order__tip {
+    width: auto;
+    .main-inner--tablet ();
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
 }

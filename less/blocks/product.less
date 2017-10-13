@@ -3,14 +3,13 @@
   flex-wrap: wrap;
 
   box-sizing: border-box;
-  width: 260px;
 
   border: 1px solid @border-color;
 }
 
 .product__inner {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 
   width: 200px;
   margin: 0 auto;
@@ -28,28 +27,26 @@
 .product__title {
   margin: 0;
   margin-bottom: 14px;
-}
 
-.product__title a {
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: @text-color--black;
-  text-decoration: none;
+  a {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: @text-color--black;
+    text-decoration: none;
 
-  &:hover,
-  &:focus  {
-    color: rgba(0, 0, 0, 0.6);
-  }
+    &:hover,
+    &:focus  {
+      color: rgba(0, 0, 0, 0.6);
+    }
 
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
 .product__descr {
-  position: relative;
-
   width: 100%;
   margin: 0;
   margin-bottom: 21px;
@@ -57,12 +54,23 @@
   font-size: 13px;
   line-height: 30px;
   color: @text-color;
+}
 
-  &::after {
+.product__inner-price {
+  position: relative;
+
+  display: flex;
+  align-items: baseline;
+
+  width: 100%;
+  padding-top: 21px;
+  margin-bottom: 25px;
+
+  &::before {
     content: "";
 
     position: absolute;
-    bottom: -21px;
+    top: 0;
     left: 0;
 
     width: 100%;
@@ -72,14 +80,54 @@
   }
 }
 
-.product__inner-price {
-  width: 100%;
-  display: flex;
-  align-items: center;
-
-  min-height: 72px;
-}
-
 .product__price {
   margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+
+  .product__image {
+    margin-bottom: 0;
+  }
+
+  .product__pic {
+    width: 334px;
+    height: 334px;
+  }
+
+  .product__inner {
+    flex-grow: 1;
+
+    padding-top: 27px;
+    padding-right: 33px;
+    padding-left: 33px;
+  }
+
+  .product__title {
+    margin-bottom: 6px;
+    margin-left: -6px;
+
+    a {
+      font-size: 20px;
+    }
+
+  }
+
+  .product__descr {
+    margin-bottom: 21px;
+    margin-left: -6px;
+
+    font-size: 15px;
+  }
+
+  .product__inner-price {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__pic {
+    width: 315px;
+    height: 462px;
+  }
 }
