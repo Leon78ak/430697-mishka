@@ -1,6 +1,4 @@
 .page-heading {
-  .container();
-
   color: @text-color--black;
   background-color: #f9f9f9;
 
@@ -15,9 +13,14 @@
     }
   }
 
-  &--inner {
+  &--inner-page {
     background-color: @bg-grey--light;
   }
+}
+
+.page-heading__inner {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-heading__slogan {
@@ -50,6 +53,10 @@
         background-size: 1150px auto;
       }
     }
+  }
+
+  .page-heading__inner {
+    width: 668px;
   }
 
   .page-heading__slogan {

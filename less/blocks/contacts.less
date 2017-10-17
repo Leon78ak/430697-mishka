@@ -1,5 +1,8 @@
 .contacts__inner {
   .main-inner();
+
+  width: 260px;
+  margin: 0 auto;
 }
 
 .contacts__title {
@@ -47,9 +50,17 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contacts__inner {
+  .main-inner--tablet();
+
+  width: 668px;
+  margin: 0 auto;
+}
+
   .contacts__title {
     .section-title--tablet ();
 
+    margin-left: -3px;
     padding-top: 64px;
   }
 
