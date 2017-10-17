@@ -1,6 +1,4 @@
 .about {
-  .main-inner();
-
   position: relative;
 
   width: 260px;
@@ -90,7 +88,7 @@
 @media (min-width: @tablet-width) {
 
   .about {
-    width: 668px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 52px;
   }
@@ -105,7 +103,6 @@
     display: flex;
     flex-wrap: wrap;
 
-    width: 668px;
     margin: 0 auto;
   }
 
@@ -115,9 +112,38 @@
 
     font-size: 20px;
     line-height: 22px;
+
+    &--ecology {
+      order: 0;
+    }
+
+    &--price {
+        order: 2;
+    }
+
+    &--like {
+      order: 4;
+    }
+
+    &--handmade {
+      order: 1;
+    }
+
+    &--patriot {
+      order: 3;
+    }
+
+    &--gift {
+      order: 5;
+    }
   }
 }
 
-@media (min-width: @desktop-width) {
 
+@media (min-width: @desktop-width) {
+  .about {
+    width: auto;
+    padding: 0 175px;
+    padding-top: 68px;
+  }
 }
