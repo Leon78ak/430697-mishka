@@ -1,6 +1,7 @@
-.order {
-  .main-inner();
-
+.order__inner {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
   padding-top: 24px;
 }
 
@@ -16,14 +17,14 @@
 
 @media (min-width: @tablet-width) {
 
-  .order {
-    padding: 0;
+  .order__inner {
+    width: 668px;
+    padding: 0 50px;
     padding-top: 117px;
   }
 
   .order__tip {
     width: auto;
-    .main-inner--tablet ();
 
     font-size: 17px;
     line-height: 30px;
@@ -31,5 +32,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .order__inner {
+    width: 700px;
+    padding: 0 175px;
+    padding-top: 125px;
+  }
 
+  .order__tip {
+    width: auto;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

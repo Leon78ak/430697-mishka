@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
 
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -17,7 +18,7 @@
   display: block;
   width: 100%;
   padding-top: 26px;
-  padding-right: 160px;
+  padding-right: 50%;
   padding-bottom: 29px;
   padding-left: 30px;
 
@@ -62,7 +63,6 @@
 }
 
 @media (max-width: @mobile-width-only) {
-
   .offers-list__item {
     width: 100%;
   }
@@ -70,15 +70,24 @@
 
 @media (min-width: @tablet-width) {
   .offers-list__link {
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-right: 70%;
+    padding-bottom: 30px;
     padding-left: 36px;
-    padding-right: 50%;
+
 
     font-size: 20px;
     line-height: 30px;
+
+    &--interior {
+      background-position: 258px 31px;
+    }
+
+    &--toys {
+      background-position: 240px 32px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  padding-right: 70%;
 }
