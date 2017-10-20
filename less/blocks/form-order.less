@@ -209,8 +209,9 @@
   background-color: transparent;
   border: 0;
   border-bottom: 2px solid @btn-border-color;
+  outline: 0;
 
-  &:placeholder {
+  &::placeholder {
     color: rgba(68, 68, 68, 0.3);
   }
 
@@ -220,7 +221,7 @@
   }
 
   &:active {
-    &:placeholder {
+    &::placeholder {
       color: rgba(68, 68, 68, 1.0);
     }
   }

@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  z-index: 3;
 
   width: 320px;
   margin: 0 auto;
@@ -12,7 +13,7 @@
   position: absolute;
   top: 28px;
   right: 28px;
-  z-index: 2;
+  z-index: 10;
 
   width: 22px;
   height: 23px;
@@ -47,7 +48,7 @@
               0 12px 0 0 #000000;
 }
 
-.main-nav--opened .main-nav__toggle{
+.main-nav--opened .main-nav__toggle {
 
   &::before,
   &::after {
@@ -185,7 +186,6 @@
 
     &--site-menu {
       width: 320px;
-      z-index: 2;
     }
 
     &--user-menu {
