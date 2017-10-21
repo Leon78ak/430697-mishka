@@ -1,13 +1,16 @@
 .order {
-  .main-inner();
-
   padding-top: 24px;
+}
+
+.order__inner {
+  width: 260px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .order__tip {
   width: 260px;
   margin: 0;
-  margin-bottom: 20px;
 
   font-size: 13px;
   line-height: 24px;
@@ -17,13 +20,17 @@
 @media (min-width: @tablet-width) {
 
   .order {
-    padding: 0;
-    padding-top: 117px;
+    padding-top: 75px;
+  }
+
+  .order__inner {
+    width: 668px;
+    margin-bottom: 55px;
+    padding: 0 50px;
   }
 
   .order__tip {
     width: auto;
-    .main-inner--tablet ();
 
     font-size: 17px;
     line-height: 30px;
@@ -31,5 +38,19 @@
 }
 
 @media (min-width: @desktop-width) {
+  .order {
+    padding-top: 125px;
+  }
 
+  .order__inner {
+    width: 700px;
+    padding: 0 175px;
+  }
+
+  .order__tip {
+    width: auto;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
 }

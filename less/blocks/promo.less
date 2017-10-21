@@ -1,4 +1,8 @@
 .promo {
+  position: relative;
+
+  margin-bottom: 35px;
+
   color: @text-color;
   background-color: @bg-white;
 }
@@ -13,7 +17,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  color: @green--light;
+  color: @green--light-63;
   text-transform: uppercase;
 }
 
@@ -21,18 +25,17 @@
   margin-bottom: 28px;
 }
 
+.promo__container-text {
+  margin-bottom: 28px;
+}
+
 .promo__descr {
   margin: 0;
   margin-bottom: 28px;
-
-  br {
-    display: none;
-  }
 }
 
 .promo__specification {
   width: 100%;
-  margin-bottom: 28px;
 
   line-height: 20px;
 
@@ -45,28 +48,36 @@
 
 .promo__field,
 .promo__value  {
-  padding: 8px 0;
+  padding: 5px 0;
 
   vertical-align: top;
   text-align: left;
 }
 
 .promo__field {
-  width: 37%;
+  width: 32%;
 
   font-weight: 400;
 }
 
 .promo__value {
-  width: 63%;
+  width: 68%;
 }
 
 .promo__image {
   margin: 0;
+  padding-bottom: 126px;
 }
 
 .promo__image img {
   display: block;
+}
+
+.promo__price-container {
+  position: absolute;
+  bottom: 0;
+
+  width: 260px;
 }
 
 .promo__price {
@@ -98,7 +109,6 @@
     width: 668px;
     margin: 0 auto;
     margin-bottom: 55px;
-    padding: 0 50px;
     padding-top: 50px;
   }
 
@@ -123,38 +133,40 @@
 
   .promo__inner {
     display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap;
+
+    width: 290px;
+    padding-right: 44px ;
   }
 
   .promo__container-text {
-    width: 43%;
-    padding-right: 7%;
+    width: 100%;
+    margin-bottom: 23px;
   }
 
   .promo__descr {
+    min-width: 0;
+    word-wrap: break-word;
     margin-top: -8px;
-    margin-bottom: 45px;
+    margin-bottom: 32px;
 
     font-size: 17px;
     line-height: 30px;
   }
 
-  br {
-  display: block;
-}
-
-  .promo__image {
-    width: 50%;
-    height: 405px;
-  }
-
   .promo__specification {
     width: 100%;
+
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .promo__price-container {
-    width: 43%;
-    margin-top: -140px;
+    position: inherit;
+
+    width: 100%;
   }
 
   .promo__price {
@@ -167,15 +179,61 @@
   .promo__to-order {
     width: auto;
   }
+
+  .promo__image {
+    width: 50%;
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .promo {
+    width: 1050px;
+    margin-bottom: 73px;
+    padding-top: 125px;
+  }
+
+  .promo__heading {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2;
+
+    min-width: 0;
+    word-wrap: break-word
+  }
+
+  .promo__flag {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 175px;
+    margin-left: 0;
+    padding-top: 6px;
+    padding-right: 55px;
+    padding-left: 48px;
+  }
+
   .promo__title {
     .section-title--desktop ();
   }
 
+  .promo__inner {
+    padding-right: 60px;
+    margin-left: 175px;
+  }
+
+  .promo__container-text {
+    width: 100%;
+    margin-bottom: 82px;
+  }
+
+  .promo__descr {
+    margin-bottom: 47px;
+  }
+
   .promo__image {
-    width: 334px;
-    height: 405px;
+    width: 525px;
+    height: 636px;
+    margin-top: -168px;
   }
 }
