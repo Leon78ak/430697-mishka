@@ -2,9 +2,9 @@ var navMain = document.querySelector(".main-nav");
 
 var navToggle = document.querySelector(".main-nav__toggle");
 
-var product = document.querySelector(".product");
+var catalog = document.querySelector(".catalog");
 
-var toCart = product.querySelectorAll(".to-cart");
+var toCart = catalog.querySelectorAll(".to-cart");
 
 var popupToCart = document.querySelector(".modal--to-cart");
 
