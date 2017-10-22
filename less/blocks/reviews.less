@@ -1,9 +1,11 @@
 .reviews {
-  .main-inner();
-
-  width: 260px;
   margin-bottom: 92px;
+}
+
+.reviews__inner {
+  width: 260px;
   margin: 0 auto;
+  padding: 0 30px;
 }
 
 .reviews__title {
@@ -64,20 +66,61 @@
   &--next {
     background-image: url("../img/icon-right-arrow.svg");
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__write {
   width: 100%;
+  margin-bottom: 44px;
 }
 
 @media (min-width: @tablet-width) {
 
   .reviews {
+    margin-bottom: 0;
+  }
+
+  .reviews__inner {
+    position: relative;
+
     display: flex;
 
     width: 668px;
-    margin: 0 auto;
+    padding: 0 50px;
     padding-top: 82px;
+    padding-bottom: 68px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
+
+     &::before {
+      content: "";
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 768px;
+      height: 17px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-size: 768px 17px;
+    }
   }
 
   .reviews__title {
@@ -92,7 +135,8 @@
 
   .reviews__item {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-bottom: 52px;
   }
 
   .reviews__text {
@@ -119,10 +163,12 @@
     display: flex;
     flex-wrap: wrap-reverse;
 
-    width: 25%;
+    width: 176px;
   }
 
   .reviews__arrow {
+    height: 45px;
+    margin-bottom: 52px;
     border: none;
   }
 
@@ -136,4 +182,37 @@
 
 @media (min-width: @desktop-width) {
 
+  .reviews__inner {
+    display: flex;
+
+    width: 875px;
+    padding-top: 75px;
+    padding-right: 100px;
+    padding-bottom: 92px;
+    padding-left: 275px;
+
+    background-position: 100px 0;
+
+    &::before {
+      left: 100px;
+
+      width: 1050px;
+      height: 23px;
+
+      background-size: 1050px 23px;
+    }
+  }
+
+  .reviews__item {
+    margin-bottom: 96px;
+  }
+
+  .reviews__text {
+    width: 120%;
+    margin-bottom: 43px;
+  }
+
+  .reviews__arrow {
+    margin-bottom: 100px;
+  }
 }

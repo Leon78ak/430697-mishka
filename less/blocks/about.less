@@ -1,25 +1,11 @@
 .about {
-  .main-inner();
+  margin-bottom: 58px;
+}
 
-  position: relative;
-
+.about__inner {
   width: 260px;
   margin: 0 auto;
-  margin-bottom: 58px;
-  padding-top: 33px;
-
-  background-color: #ffffff;
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 5px;
-  }
+  padding: 0 30px;
 }
 
 .about__heading {
@@ -88,34 +74,101 @@
 @media (min-width: @tablet-width) {
 
   .about {
+    margin-bottom: 46px;
+  }
+
+  .about__inner {
+    position: relative;
+
     width: 668px;
-    margin: 0 auto;
-    margin-bottom: 52px;
+    padding: 0 50px;
+    padding-top: 73px;
+
+    background-color: #ffffff;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 768px;
+      height: 17px;
+
+      background-image: url("../img/bg-zigzag-line.svg");
+      background-repeat: no-repeat;
+      background-size: 768px 17px;
+    }
   }
 
   .about__heading {
     .section-title--tablet ();
 
-    margin-bottom: 17px;
+    margin-bottom: 20px;
   }
 
   .about__list {
     display: flex;
     flex-wrap: wrap;
 
-    width: 668px;
     margin: 0 auto;
   }
 
   .about__item {
     width: 50%;
-    margin-bottom: 28px;
+    margin-bottom: 32px;
 
     font-size: 20px;
     line-height: 22px;
+
+    &--ecology {
+      order: 0;
+    }
+
+    &--price {
+        order: 2;
+    }
+
+    &--like {
+      order: 4;
+    }
+
+    &--handmade {
+      order: 1;
+    }
+
+    &--patriot {
+      order: 3;
+    }
+
+    &--gift {
+      order: 5;
+    }
   }
 }
 
+
 @media (min-width: @desktop-width) {
 
+  .about__inner {
+    width: 700px;
+    padding: 0 275px;
+    padding-top: 90px;
+
+    &::before {
+      left: 100px;
+
+      width: 1050px;
+      height: 23px;
+
+      background-size: 1050px 23px;
+    }
+  }
+
+  .about__heading {
+    .section-title--desktop ();
+
+    margin-bottom: 20px;
+  }
 }

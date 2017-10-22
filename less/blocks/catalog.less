@@ -1,13 +1,14 @@
 .catalog {
-  padding: 0 30px;
   padding-top: 30px;
 
   background-color: #ffffff;
 }
 
 .catalog__wrapper {
+  width: 260px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 30px;
+
   list-style: none;
 }
 
@@ -18,8 +19,12 @@
 
 @media (min-width: @tablet-width) {
   .catalog {
-    padding: 0 50px;
     padding-top: 81px;
+  }
+
+  .catalog__wrapper {
+    width: 668px;
+    padding: 0 50px;
   }
 
   .catalog__item {
@@ -31,13 +36,14 @@
 @media (min-width: @desktop-width) {
   .catalog {
     margin-bottom: 57px;
-    padding: 0 50px;
     padding-top: 131px;
   }
 
   .catalog__wrapper {
     display: flex;
     justify-content: space-between;
+
+    width: 1050px;
   }
 
   .catalog__item {
