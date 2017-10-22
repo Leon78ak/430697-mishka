@@ -239,7 +239,7 @@
   font: inherit;
   font-size: 17px;
   line-height: 1.2;
-  color:@text-color;
+  color: @text-color;
 
   background-color: transparent;
   border: 0;
@@ -256,7 +256,7 @@
 
   &:active {
     &::placeholder {
-      color: rgba(68, 68, 68, 1.0);
+      color: rgba(68, 68, 68, 1);
     }
   }
 
@@ -285,7 +285,6 @@
 }
 
 @media (max-width: @mobile-width-only) {
-
   .form-order__group-name::after {
     content: "";
 
@@ -298,7 +297,6 @@
 }
 
 @media (min-width: @tablet-width) {
-
   .form-order {
     display: flex;
     flex-wrap: wrap;
@@ -391,7 +389,6 @@
   }
 
   .form-order__label {
-
     &--text {
       padding-right: 25px;
     }
@@ -402,7 +399,6 @@
   }
 
   .form-order__input {
-
     &--text {
       width: 100%;
       padding-right: 18px;
@@ -435,7 +431,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .form-order__group--btn .form-order__group-inner {
     width: 700px;
     padding-right: 175px;
