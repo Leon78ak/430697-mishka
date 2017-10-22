@@ -115,14 +115,14 @@ module.exports = function(grunt) {
       server: {
         bsFiles: {
           src: [
-            "*.html",
-            "css/*.css",
-            "img/*.svg",
-            "js/*.js"
+            "build/*.html",
+            "build/css/*.css",
+            "build/img/*.svg",
+            "build/js/*.js"
           ]
         },
         options: {
-          server: ".",
+          server: "build/",
           watchTask: true,
           notify: false,
           open: true,
@@ -133,9 +133,13 @@ module.exports = function(grunt) {
     },
 
     watch: {
+      html: {
+        files: ["*.html"],
+        tasks: ["posthtml"]
+      },
       style: {
         files: ["less/**/*.less"],
-        tasks: ["less", "postcss"]
+        tasks: ["less", "postcss", "csso", "uglify"]
       }
     }
   });
