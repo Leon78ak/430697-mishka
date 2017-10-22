@@ -23,14 +23,6 @@
   cursor: pointer;
 
   border: none;
-
-  &:hover {
-
-  }
-
-  &:active {
-
-  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -48,7 +40,6 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -61,16 +52,16 @@
 
     background-color: #000000;
     transform: translateY(-50%);
-    }
+  }
 
-    &::before {
-      transform: rotate(45deg);
-      box-shadow: none;
-    }
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
 
-    &::after {
-      transform: rotate(-45deg);
-    }
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav__list {
