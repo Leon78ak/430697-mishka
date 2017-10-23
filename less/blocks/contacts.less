@@ -113,7 +113,7 @@
 
     margin-bottom: 49px;
     margin-left: -3px;
-    padding-top: 64px;
+    padding-top: 58px;
 
     &::after {
       content: "";
@@ -157,7 +157,7 @@
   }
 
   .contacts__map {
-    padding-bottom: 162px;
+    padding-bottom: 165px;
   }
 }
 
@@ -179,19 +179,27 @@
   }
 
   .contacts__title {
+    .section-title--desktop ();
+
+    padding-top: 72px;
+
     &::after {
-      left: -112px;
+      top: 64px;
+      left: -107px;
     }
   }
 
   .contacts__list {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
   .contacts__definition {
+    margin-bottom: 26px;
+
     &:last-child {
-      margin-bottom: 85px;
+      margin-bottom: 80px;
     }
   }
 
