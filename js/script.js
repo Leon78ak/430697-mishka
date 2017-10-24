@@ -8,6 +8,10 @@ var popupToCart = document.querySelector(".modal--to-cart");
 
 var overlay = document.querySelector(".overlay");
 
+var catalog = document.querySelector(".catalog");
+
+var toCart = catalog.querySelectorAll(".to-cart");
+
 navMain.classList.remove("main-nav--nojs");
 
 navToggle.addEventListener("click", function() {
@@ -20,11 +24,23 @@ navToggle.addEventListener("click", function() {
   }
 });
 
-linkOrder.addEventListener("click", function (event) {
+if(linkOrder) {
+  linkOrder.addEventListener("click", function (event) {
   event.preventDefault();
   popupToCart.classList.add("modal--show");
   overlay.classList.add("overlay--show");
-});
+  });
+}
+
+if(catalog) {
+  for (var i = 0; i < toCart.length; i++) {
+    toCart[i].addEventListener("click", function (event) {
+      event.preventDefault();
+      popupToCart.classList.add("modal--show");
+      overlay.classList.add("overlay--show");
+    });
+  };
+}
 
 window.addEventListener("keydown", function (event) {
   if (event.keyCode === 27) {

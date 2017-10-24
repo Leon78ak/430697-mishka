@@ -94,7 +94,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ["img/**/*.{png,jpg,svg}"]
+          src: ["build/img/**/*.{png,jpg,svg}"]
         }]
       }
     },
@@ -106,7 +106,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ["img/**/*.{png,jpg}"]
+          src: ["build/img/**/*.{png,jpg}"]
         }]
       }
     },
@@ -156,5 +156,6 @@ module.exports = function(grunt) {
     "svgstore",
     "posthtml"
   ]);
-};
 
+  grunt.registerTask("img", ["imagemin", "cwebp"]);
+};
