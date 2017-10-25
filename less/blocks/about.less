@@ -54,7 +54,7 @@
   }
 
   &--price {
-    bacround-position: 1px 33px;
+    background-position: 1px 33px;
     background-image: url("../img/icon-feature-money.svg");
   }
 
@@ -91,13 +91,13 @@
 
 @media (min-width: @tablet-width) {
   .about {
-    margin-bottom: 46px;
+    margin-bottom: 56px;
   }
 
   .about__inner {
     width: 668px;
     padding: 0 50px;
-    padding-top: 73px;
+    padding-top: 64px;
 
     background-color: #ffffff;
 
@@ -124,7 +124,7 @@
 
   .about__item {
     width: 50%;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 
     font-size: 20px;
     line-height: 22px;
@@ -157,10 +157,14 @@
 
 
 @media (min-width: @desktop-width) {
+  .about {
+    margin-bottom: 64px;
+  }
+
   .about__inner {
     width: 700px;
     padding: 0 275px;
-    padding-top: 90px;
+    padding-top: 85px;
 
     &::before {
       left: 100px;
@@ -176,5 +180,11 @@
     .section-title--desktop ();
 
     margin-bottom: 20px;
+  }
+
+  .about__item {
+    &--price {
+      bacround-position: 8px 33px;
+    }
   }
 }

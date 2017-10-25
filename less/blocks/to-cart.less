@@ -7,6 +7,15 @@
     width: auto;
     height: auto;
   }
+
+  &:hover .to-cart__icon,
+  &:focus .to-cart__icon {
+    fill: #63d1bb;
+  }
+
+  &:active .to-cart__icon {
+    fill: #d0f1ea;
+  }
 }
 
 .to-cart__icon {
@@ -20,14 +29,7 @@
 
   transform: translateY(-50%);
 
-  &:hover .to-cart__fill,
-  &:focus .to-cart__fill  {
-    fill: #63d1bb;
-  }
-
-  &:active .to-cart__fill {
-    fill: #d0f1ea;
-  }
+  fill: rgba(0, 0, 0, 0.2);
 
   &--nav {
     left: 30px;

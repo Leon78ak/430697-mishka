@@ -12,7 +12,7 @@
   border-top: 1px solid @border-color;
   transform: translate(-50%, -50%);
 
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
 
   &--show {
     display: block;
@@ -41,11 +41,11 @@
 }
 
 .modal__form {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-width: 260px;
-margin-bottom: 43px;
+  width: 260px;
+  margin-bottom: 43px;
 }
 
 .modal__list {
@@ -66,7 +66,7 @@ margin-bottom: 43px;
   border-color: @green--light-63;
 
   &:hover,
-  &:focus  {
+  &:focus {
     background-color: #59d5bc;
   }
 
@@ -77,17 +77,15 @@ margin-bottom: 43px;
 }
 
 @media (min-width: @tablet-width) {
-
   .modal {
     width: 568px;
     padding: 0 107px;
   }
 
   .modal__wrapper {
-  padding: 0;
-  padding-top: 37px;
-}
-
+    padding: 0;
+    padding-top: 37px;
+  }
 
   .modal__title {
     margin-bottom: 13px;

@@ -33,40 +33,75 @@
 
   text-decoration: none;
 
-  &:hover,
-  &:focus {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 0 0 #63d1bb;
-  }
-
-  &:active {
-    color: rgba(255,255,255,.3);
-  }
-
   &--interior {
     background-color: #63d1bb;
-    background-image: url("../img/icon-interior.svg");
-    background-position: 243px 24px;
 
     &:hover,
     &:focus {
+      transform: translateY(-5px);
       background-color: #59d5bc;
-      box-shadow: 0 5px 0 0 #63d1bb;
+      box-shadow: 0 5px 0 0 #59d5bc;
+      outline: none;
+
+      .offers-list__icon {
+        fill: rgba(20, 144, 128, 0.7);
+      }
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      .offers-list__icon {
+        fill: rgba(20, 144, 128, 0.3);
+      }
     }
   }
 
   &--toys {
     background-color: #56c3b2;
-    background-image: url("../img/icon-toy.svg");
-    background-position: 235px 24px;
 
     &:hover,
     &:focus {
-      box-shadow: 0 5px 0 0 #56c3b2;
+      transform: translateY(-5px);
+      background-color: #46c1ae;
+      box-shadow: 0 5px 0 0 #46c1ae;
+      outline: none;
+
+      .offers-list__icon {
+        fill: rgba(20, 144, 128, 0.7);
+      }
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      .offers-list__icon {
+        fill: rgba(20, 144, 128, 0.3);
+      }
     }
   }
 }
 
+.offers-list__icon {
+  position: absolute;
+
+  top: 50%;
+  right: 36px;
+
+  transform: translateY(-50%);
+
+  fill: rgba(20, 144, 128, 0.5);
+
+  &--interior {
+    width: 40px;
+    height: 62px;
+  }
+
+  &--toy {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 @media (max-width: @mobile-width-only) {
   .offers-list__item {
@@ -84,14 +119,6 @@
 
     font-size: 20px;
     line-height: 30px;
-
-    &--interior {
-      background-position: 258px 31px;
-    }
-
-    &--toys {
-      background-position: 240px 32px;
-    }
   }
 }
 
