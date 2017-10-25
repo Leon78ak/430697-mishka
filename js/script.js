@@ -10,8 +10,6 @@ var overlay = document.querySelector(".overlay");
 
 var catalog = document.querySelector(".catalog");
 
-var toCart = catalog.querySelectorAll(".to-cart");
-
 navMain.classList.remove("main-nav--nojs");
 
 navToggle.addEventListener("click", function() {
@@ -33,6 +31,7 @@ if(linkOrder) {
 }
 
 if(catalog) {
+  var toCart = catalog.querySelectorAll(".to-cart");
   for (var i = 0; i < toCart.length; i++) {
     toCart[i].addEventListener("click", function (event) {
       event.preventDefault();

@@ -14,22 +14,19 @@
 
 .page-footer__logo {
   display: none;
-
-  color: #000000;
-
-  &:hover,
-  &:focus {
-    color: rgba(70, 193, 174, 1);
-  }
-
-  &:active {
-    color: rgba(70, 193, 174, 0.3);
-  }
 }
 
-.page-footer__social,
-.page-footer__copyright {
-  width: 260px;
+.page-footer__logo-icon {
+  fill: #231f20;
+}
+
+.page-footer__logo:hover .page-footer__logo-icon,
+.page-footer__logo:focus .page-footer__logo-icon {
+  fill: rgba(70, 193, 174, 1);
+}
+
+.page-footer__logo:active .page-footer__logo-icon {
+  fill: rgba(70, 193, 174, 0.3);
 }
 
 .page-footer__social {
@@ -41,6 +38,14 @@
 .page-footer__copyright {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: @mobile-width-only) {
+  .page-footer__social,
+  .page-footer__copyright {
+    width: 260px;
+    min-height: 80px;
+}
 }
 
 @media (min-width: @tablet-width) {
@@ -69,5 +74,26 @@
 
   .page-footer__copyright {
     width: 182px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 1050px;
+  }
+
+  .page-footer__logo {
+    width: 350px;
+  }
+
+  .page-footer__social {
+    width: 350px;
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  .page-footer__copyright {
+    justify-content: flex-end;
+    width: 350px;
   }
 }
