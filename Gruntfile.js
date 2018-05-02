@@ -111,10 +111,11 @@ module.exports = function(grunt) {
       }
     },
 
-    githubPages: {
-      target: {
-        src: "build/"
-      }
+    "gh-pages": {
+      options: {
+        base: "build"
+      },
+      src: "**/*"
     },
 
     browserSync: {
@@ -165,5 +166,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask("img", ["imagemin", "cwebp"]);
 
-  grunt.registerTask("deploy", ["githubPages:target"]);
+  grunt.registerTask("dev", ["gh-pages"]);
 };
