@@ -113,7 +113,7 @@ module.exports = function(grunt) {
 
     githubPages: {
       target: {
-        src: "build/**/*"
+        src: "./build/**/*"
       }
     },
 
