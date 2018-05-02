@@ -111,6 +111,17 @@ module.exports = function(grunt) {
       }
     },
 
+    githubPages: {
+      target: {
+        options: {
+          // The default commit message for the gh-pages branch
+          commitMessage: 'push'
+        },
+        // The folder where your gh-pages repo is
+        src: "build/"
+      }
+    },
+
     browserSync: {
       server: {
         bsFiles: {
@@ -158,4 +169,6 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask("img", ["imagemin", "cwebp"]);
+
+  grunt.registerTask("deploy", ["githubPages:target"]);
 };
